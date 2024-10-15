@@ -17,6 +17,8 @@
     }
   },
   "rules": {
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "react/jsx-props-no-spreading": "off",
