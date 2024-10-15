@@ -17,6 +17,7 @@
     }
   },
   "rules": {
+    "camelcase": ["error", { "properties": "always", "ignoreImports": true }],
     "react/require-default-props": "off",
     "import/no-extraneous-dependencies": "off",
     "prettier/prettier": "error",

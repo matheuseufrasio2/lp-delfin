@@ -9,9 +9,9 @@ export default function Home() {
       <main className="w-full flex flex-col items-center">
         <MainSection />
 
-        <section
+        {/* <section
           id="about"
-          className="w-full h-[calc(100vh-72px)] flex items-center justify-center"
+          className="w-full h-[calc(100vh-72px)] bg-red-900 flex items-center justify-center"
         >
           <h2 className="text-3xl text-white">Sobre Nós</h2>
         </section>
@@ -28,7 +28,7 @@ export default function Home() {
           className="w-full h-[calc(100vh-72px)] flex items-center justify-center"
         >
           <h2 className="text-3xl text-white">Clientes</h2>
-        </section>
+        </section> */}
       </main>
     </div>
   );
