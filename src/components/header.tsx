@@ -15,7 +15,7 @@ export function Header() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.6, // Adjust this value to determine when a section is considered "visible"
+      threshold: 0.6,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -51,11 +51,23 @@ export function Header() {
       const header = document.querySelector('header');
       const inicioLink = document.querySelector('#inicio-link');
       if (window.scrollY > 0) {
-        header?.classList.add('backdrop-blur-md');
+        header?.classList.add(
+          'backdrop-blur-sm',
+          'border-b-2',
+          'border-[#664796]',
+          'bg-black',
+          'bg-opacity-50',
+        );
         inicioLink?.classList.remove('opacity-0');
         inicioLink?.classList.add('opacity-100');
       } else {
-        header?.classList.remove('backdrop-blur-md');
+        header?.classList.remove(
+          'backdrop-blur-sm',
+          'border-b-2',
+          'border-[#664796]',
+          'bg-black',
+          'bg-opacity-50',
+        );
         inicioLink?.classList.remove('opacity-100');
         inicioLink?.classList.add('opacity-0');
       }
@@ -74,7 +86,7 @@ export function Header() {
     <header className="w-full py-6 fixed top-0 bg-transparent flex items-center justify-center z-10 transition-all duration-300">
       <div className="max-w-[1120px] w-full flex items-center justify-between px-4">
         <Image src={logoDelfin} alt="Delfin Agencia" className="w-24" />
-        <nav className="flex space-x-4 items-center ml-auto">
+        <nav className="hidden md:flex space-x-4 items-center ml-auto">
           <a
             id="inicio-link"
             href="#top"
