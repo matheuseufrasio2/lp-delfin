@@ -1,6 +1,7 @@
 export function MainSectionSvg() {
   return (
     <svg
+      className="hidden lg:block"
       width="676"
       height="489"
       viewBox="0 0 676 489"

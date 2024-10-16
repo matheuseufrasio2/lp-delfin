@@ -9,23 +9,25 @@ export function MainSection() {
       <div className="mx-auto flex h-full max-w-[1120px] flex-col items-center justify-center">
         <div className="flex items-center justify-center">
           <div className="flex-col items-center justify-center text-white">
-            <h1 className="text-start text-4xl font-bold">
+            <h1 className="text-center text-4xl font-bold md:text-start">
               Sua estratégia de marketing começa na escolha da agência certa.
             </h1>
             <TypingAnimation
-              className="w-full text-left"
+              className="w-full text-center md:text-start"
               text="Prazer, Delfin"
             />
-            <span className="text-center text-2xl">
+            <p className="block text-center text-2xl">
               Impulsione sua presença digital e aumente suas vendas com o
               suporte de uma equipe criativa e antenada.
-            </span>
+            </p>
           </div>
           <MainSectionSvg />
         </div>
-        <Button size="lg" className="w-80">
-          Solicitar Orçamento
-        </Button>
+        <a href="#services">
+          <Button size="lg" className="m-10 w-80">
+            Solicitar Orçamento
+          </Button>
+        </a>
         <RetroGrid />
       </div>
     </section>

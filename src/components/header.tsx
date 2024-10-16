@@ -83,34 +83,38 @@ export function Header() {
       : 'text-lg';
 
   return (
-    <header className="fixed top-0 z-10 flex w-full items-center justify-center bg-transparent py-6 transition-all duration-300">
+    <header className="fixed top-0 z-10 flex w-full items-center justify-center bg-transparent py-2 transition-all duration-300 md:py-6">
       <div className="flex w-full max-w-[1120px] items-center justify-between px-4">
         <Image src={logoDelfin} alt="Delfin Agencia" className="w-24" />
-        <nav className="ml-auto hidden items-center space-x-4 md:flex">
-          <a
-            id="inicio-link"
-            href="#top"
-            className="text-lg opacity-0 transition-opacity duration-500"
-          >
-            Início
+        <div className="flex items-center justify-center gap-4">
+          <nav className="ml-auto hidden items-center justify-center space-x-4 md:flex">
+            <a
+              id="inicio-link"
+              href="#top"
+              className="text-lg opacity-0 transition-opacity duration-500"
+            >
+              Início
+            </a>
+            <a href="#about" className={getLinkClasses('#about')}>
+              Sobre Nós
+            </a>
+            <a href="#services" className={getLinkClasses('#services')}>
+              Serviços
+            </a>
+            <a href="#clients" className={getLinkClasses('#clients')}>
+              Clientes
+            </a>
+          </nav>
+          <a href="#services">
+            <ShimmerButton
+              borderRadius="16px"
+              background="#9945E8"
+              className="p-1.5 shadow-md"
+            >
+              Entre em contato
+            </ShimmerButton>
           </a>
-          <a href="#about" className={getLinkClasses('#about')}>
-            Sobre Nós
-          </a>
-          <a href="#services" className={getLinkClasses('#services')}>
-            Serviços
-          </a>
-          <a href="#clients" className={getLinkClasses('#clients')}>
-            Clientes
-          </a>
-          <ShimmerButton
-            borderRadius="16px"
-            background="#9945E8"
-            className="shadow-md"
-          >
-            Entre em contato
-          </ShimmerButton>
-        </nav>
+        </div>
       </div>
     </header>
   );
