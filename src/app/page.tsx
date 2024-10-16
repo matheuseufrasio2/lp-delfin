@@ -3,29 +3,29 @@ import { MainSection } from '@/components/main-section';
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       <Header />
 
-      <main className="w-full flex flex-col items-center">
+      <main className="flex w-full flex-col items-center">
         <MainSection />
 
         <section
           id="about"
-          className="w-full h-[calc(100vh-72px)] bg-red-900 flex items-center justify-center"
+          className="flex h-[calc(100vh-72px)] w-full items-center justify-center bg-red-900"
         >
           <h2 className="text-3xl text-white">Sobre Nós</h2>
         </section>
 
         <section
           id="services"
-          className="w-full h-[calc(100vh-72px)] flex items-center justify-center"
+          className="flex h-[calc(100vh-72px)] w-full items-center justify-center"
         >
           <h2 className="text-3xl text-white">Serviços</h2>
         </section>
 
         <section
           id="clients"
-          className="w-full h-[calc(100vh-72px)] flex items-center justify-center"
+          className="flex h-[calc(100vh-72px)] w-full items-center justify-center"
         >
           <h2 className="text-3xl text-white">Clientes</h2>
         </section>

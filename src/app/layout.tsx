@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${ibmPlexSans.className} antialiased dark`}>
+      <body className={`${ibmPlexSans.className} dark antialiased`}>
         {children}
       </body>
     </html>

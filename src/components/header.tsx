@@ -83,10 +83,10 @@ export function Header() {
       : 'text-lg';
 
   return (
-    <header className="w-full py-6 fixed top-0 bg-transparent flex items-center justify-center z-10 transition-all duration-300">
-      <div className="max-w-[1120px] w-full flex items-center justify-between px-4">
+    <header className="fixed top-0 z-10 flex w-full items-center justify-center bg-transparent py-6 transition-all duration-300">
+      <div className="flex w-full max-w-[1120px] items-center justify-between px-4">
         <Image src={logoDelfin} alt="Delfin Agencia" className="w-24" />
-        <nav className="hidden md:flex space-x-4 items-center ml-auto">
+        <nav className="ml-auto hidden items-center space-x-4 md:flex">
           <a
             id="inicio-link"
             href="#top"
