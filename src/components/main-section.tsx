@@ -28,7 +28,7 @@ export function MainSection() {
             Solicitar Orçamento
           </Button>
         </a>
-        <RetroGrid />
+        <RetroGrid className="max-h-screen" />
       </div>
     </section>
   );

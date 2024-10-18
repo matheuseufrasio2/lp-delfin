@@ -17,6 +17,7 @@
     }
   },
   "rules": {
+    "react/prop-types": "off",
     "tailwindcss/classnames-order": "warn",
     "camelcase": ["error", { "properties": "always", "ignoreImports": true }],
     "react/require-default-props": "off",

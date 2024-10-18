@@ -11,12 +11,6 @@ const ibmPlexSans = IBM_Plex_Sans({
 export const metadata: Metadata = {
   title: 'Agencia Delfin',
   description: 'Agencia de Marketing',
-  icons: [
-    {
-      rel: 'icon',
-      url: '/logo-delfin.svg',
-    },
-  ],
 };
 
 export default function RootLayout({

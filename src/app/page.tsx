@@ -1,5 +1,6 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
+import { AboutUs } from '@/components/about-us';
 import { Header } from '@/components/header';
 import { MainSection } from '@/components/main-section';
 
@@ -11,12 +12,7 @@ export default function Home() {
       <main className="flex w-full flex-col items-center px-4 md:px-0">
         <MainSection />
 
-        <section
-          id="about"
-          className="flex h-[calc(100vh-72px)] w-full items-center justify-center bg-red-900"
-        >
-          <h2 className="text-3xl text-white">Sobre Nós</h2>
-        </section>
+        <AboutUs />
 
         <section
           id="services"
