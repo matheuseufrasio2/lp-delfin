@@ -3,6 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { AboutUs } from '@/components/about-us';
 import { Header } from '@/components/header';
 import { MainSection } from '@/components/main-section';
+import { OurServices } from '@/components/our-services';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <MainSection />
 
         <AboutUs />
+        <OurServices />
 
         <section
           id="services"

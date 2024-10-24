@@ -10,7 +10,7 @@ export function AboutUs() {
   return (
     <section id="about" className="w-full py-24">
       <div className="mx-auto flex h-full max-w-[1120px] flex-col items-center justify-center">
-        <h2 className="mb-6 text-4xl text-white">Quem Somos</h2>
+        <h2 className="mb-12 text-4xl text-white">Quem Somos</h2>
         <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-2">
           {/* Texto - Superior Esquerda */}
           <BlurFade delay={0.25} inView>
