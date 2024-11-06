@@ -4,6 +4,7 @@ import { AboutUs } from '@/components/about-us';
 import { Header } from '@/components/header';
 import { MainSection } from '@/components/main-section';
 import { OurServices } from '@/components/our-services';
+import { TalkToUs } from '@/components/talk-to-us';
 
 export default function Home() {
   return (
@@ -17,18 +18,13 @@ export default function Home() {
         <OurServices />
 
         <section
-          id="services"
-          className="flex h-[calc(100vh-72px)] w-full items-center justify-center"
-        >
-          <h2 className="text-3xl text-white">Serviços</h2>
-        </section>
-
-        <section
           id="clients"
           className="flex h-[calc(100vh-72px)] w-full items-center justify-center"
         >
           <h2 className="text-3xl text-white">Clientes</h2>
         </section>
+
+        <TalkToUs />
       </main>
 
       <a

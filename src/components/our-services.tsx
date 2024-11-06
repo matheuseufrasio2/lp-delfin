@@ -9,7 +9,7 @@ export function OurServices() {
     <section id="about" className="w-full py-24">
       <div className="mx-auto flex h-full max-w-[1120px] flex-col items-center justify-center">
         <h2 className="mb-12 text-4xl text-white">Nossos Serviços</h2>
-        <h3 className="mb-12 text-center text-3xl text-white">
+        <h3 className="mb-32 text-center text-3xl text-white">
           Queremos que sua marca tenha cada vez{' '}
           <b className="text-purple-400">mais visibilidade e relevância</b> para
           ocupar o lugar certo na mente do seu público.
