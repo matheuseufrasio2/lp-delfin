@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa';
 
+import logoDelfin from '@/assets/logo-delfin-white.png';
 import { AboutUs } from '@/components/about-us';
+import { Clients } from '@/components/clients';
 import { Header } from '@/components/header';
 import { MainSection } from '@/components/main-section';
 import { OurServices } from '@/components/our-services';
@@ -17,15 +20,22 @@ export default function Home() {
         <AboutUs />
         <OurServices />
 
-        <section
-          id="clients"
-          className="flex h-[calc(100vh-72px)] w-full items-center justify-center"
-        >
-          <h2 className="text-3xl text-white">Clientes</h2>
-        </section>
+        <Clients />
 
         <TalkToUs />
       </main>
+
+      <footer className="h-28 w-full bg-purple-600 px-4 md:px-0">
+        <div className="mx-auto flex h-full max-w-[1120px] items-center justify-between">
+          <div className="flex flex-col gap-1 md:flex-row">
+            <p className="text-sm">
+              © {new Date().getFullYear() + 1} Delfin Agência.
+            </p>
+            <p className="text-sm">Todos os direitos reservados</p>
+          </div>
+          <Image src={logoDelfin} alt="Delfin Agencia" className="w-24" />
+        </div>
+      </footer>
 
       <a
         href="https://wa.me/5511940262630"

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-import logoDelfin from '@/assets/logo-delfin.png';
+import logoDelfin from '@/assets/logo-delfin-purple.png';
 
 import ShimmerButton from './ui/shimmer-button';
 
@@ -83,7 +83,7 @@ export function Header() {
       : 'text-lg';
 
   return (
-    <header className="fixed top-0 z-10 flex w-full items-center justify-center bg-transparent py-2 transition-all duration-300 md:py-6">
+    <header className="fixed top-0 z-10 flex w-full items-center justify-center bg-transparent py-6 transition-all duration-300">
       <div className="flex w-full max-w-[1120px] items-center justify-between px-4">
         <Image src={logoDelfin} alt="Delfin Agencia" className="w-24" />
         <div className="flex items-center justify-center gap-4">
